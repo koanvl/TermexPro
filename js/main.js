@@ -23,15 +23,15 @@ $(document).ready(function() {
   });
 
   //anchor menu-click scroll
-    var headerHeight = $('.header').height();
-  $('a[href*=#]').bind("click", function(e){
-var anchor = $(this);
-$('html, body').stop().animate({
-scrollTop: $(anchor.attr('href')).offset().top - headerHeight
-}, 1000);
-e.preventDefault();
-return false;
-});
+  var headerHeight = $('.header').height();
+  $('a[href*=#]').bind("click", function(e) {
+    var anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $(anchor.attr('href')).offset().top - headerHeight
+    }, 1000);
+    e.preventDefault();
+    return false;
+  });
 
 
 });
